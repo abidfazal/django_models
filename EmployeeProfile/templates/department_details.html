@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Department details</h2>
+    {% if dep_details %}
+       <p>name : {{dep_details.name}}</p>
+       <p>location : {{dep_details.location}}</p>
+       <p>Chair Person : {{dep_details.chairperson}}</p>
+
+    {%endif%}
+</body>
+</html>
