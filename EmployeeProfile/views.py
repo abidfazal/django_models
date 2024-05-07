@@ -1,7 +1,8 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .forms import NameForm 
 from .models import Department
+from django.contrib import messages
 
 # Create your views here.
 
@@ -48,7 +49,8 @@ def get_name(request):
         form = NameForm(request.POST)
         
         if form.is_valid():
-            return HttpResponseRedirect('/thanks/')
+            messages.success(request,'Form is submitted successfully')
+            return redirect('thanks')
         
     else:
         form = NameForm()
