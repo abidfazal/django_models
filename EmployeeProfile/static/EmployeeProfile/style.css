@@ -1,0 +1,89 @@
+li a {
+    color: white;
+}
+
+li {
+    /* list-style-type: none; */
+    color: white;
+    /* display: inline; */
+    padding: 10px;
+
+}
+
+
+.h1 {
+    color: rgb(209, 217, 239);
+    
+}
+
+body {
+    background-image:  url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg") ;
+    background-repeat: no-repeat;
+    background-size:100%;
+    backface-visibility: visible;
+    background-attachment: fixed;
+}
+nav {
+    background-color: rgb(19, 19, 92);
+    height: 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(67, 67, 171);
+}
+
+.button {
+    width: 150px;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 45%;
+}
+
+button:hover {
+    background-color: rgb(19, 19, 92);
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

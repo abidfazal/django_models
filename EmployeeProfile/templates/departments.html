@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Departments available in our institue</h1>
+{% extends 'base_nav.html' %}
 
-    {% if departments%}
+{% block title %}Departments available in our institute{% endblock %}
+
+{% block content %}
+    <h1 class='h1'>Departments available in our institue we provide</h1>
+
+    {% if departments %}
       <ol>
-       {% for department in departments%}
-        <li><a href='{%url 'department_details' department.id  %}'>{{department.name}}</a></li>
-       {%endfor%}
-       <ol>
-    {%endif%}
-</body>
-</html>
+       {% for department in departments %}
+        <li><a href='{% url 'department_details' department.id %}'>{{ department.name }}</a></li>
+       {% endfor %}
+      </ol>
+    {% endif %}
+    <a href={% url 'login'%}><Button class = 'button'>Resgister Employee</Button></a>
+{% endblock %}

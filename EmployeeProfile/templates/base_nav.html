@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'EmployeeProfile/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+   
+    <nav class="nav1">
+        <a href="{% url 'departments'%}">Home</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+    </nav>
+    {%block content%}{%endblock%}
+
+    
+</body>
+</html>
