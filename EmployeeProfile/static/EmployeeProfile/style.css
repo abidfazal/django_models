@@ -16,7 +16,7 @@ li {
     
 }
 
-body {
+html {
     background-image:  url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg") ;
     background-repeat: no-repeat;
     background-size:100%;
@@ -67,6 +67,7 @@ form {
 form label {
     display: block;
     margin-bottom: 5px;
+    color: white;
 }
 
 form input[type="text"],
